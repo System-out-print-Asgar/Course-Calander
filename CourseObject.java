@@ -90,6 +90,36 @@ public class CourseObject {
         return("");
     }
 
+    //method ot check if course is open elective
+    public String checkOpenElective(){
+        System.out.print("Is this course a Open Elective?: ");
+
+        if(OpenElecCourse){
+            System.out.print("Yes");
+        }
+
+        else{
+            System.out.print("No");
+        }
+
+        return("");
+    }
+
+    //method to check if course is proffesinally realted
+    public String checkProfRelated(){
+        System.out.print("Is this course a Professinally Related?: ");
+
+        if(ProfRelateCourse){
+            System.out.print("Yes");
+        }
+
+        else{
+            System.out.print("No");
+        }
+
+        return("");
+    }
+
 
 
 
