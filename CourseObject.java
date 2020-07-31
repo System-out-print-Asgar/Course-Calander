@@ -32,7 +32,7 @@ public class CourseObject {
 
     //Method to check if course is Liberal Table A
     public String checkLiberalA(){
-        System.out.println("Is course a Table A Liberal?: ");
+        System.out.print("Is course a Table A Liberal?: ");
 
         if(TableALibCourse){
             System.out.print("Yes");
@@ -59,6 +59,39 @@ public class CourseObject {
 
         return("");
     }
+
+    //Method to check if course is a Group 1 course 
+    public String checkGroup1(){
+        System.out.print("Is this course a Group 1 Course?: ");
+
+        if(Group1Course){
+            System.out.print("Yes");
+        }
+
+        else{
+            System.out.print("No");
+        }
+
+        return("");
+    }
+
+    //method to check if course is a required course
+    public String checkRequired(){
+        System.out.print("Is this course a Required Credit Course?: ");
+
+        if(RequiredCourse){
+            System.out.print("Yes");
+        }
+
+        else{
+            System.out.print("No");
+        }
+
+        return("");
+    }
+
+
+
 
     public String getInfo(){
         System.out.println(CourseCode+" - "+CourseName);
