@@ -1,0 +1,1 @@
+//This will hold the methods of the course objects and what will work on them
