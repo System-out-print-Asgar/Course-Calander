@@ -120,14 +120,23 @@ public class CourseObject {
         return("");
     }
 
-
-
-
+    //method to return all the info of a specific course 
     public String getInfo(){
         System.out.println(CourseCode+" - "+CourseName);
         System.out.println(CourseDescription);
         System.out.println("Time course takes place: "+CourseTime);
+        checkLiberalA();
+        checkLiberalB();
+        checkGroup1();
+        checkOpenElective();
+        checkRequired();
+        checkProfRelated();
         return("");
+    }
+
+    //method to set a new timing for the course
+    public void setCourseTime(String Time){
+        CourseTime = Time;
     }
 
 
