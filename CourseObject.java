@@ -30,6 +30,43 @@ public class CourseObject {
         ProfRelateCourse = ProfRele;
     }
 
+    //Method to check if course is Liberal Table A
+    public String checkLiberalA(){
+        System.out.println("Is course a Table A Liberal?: ");
+
+        if(TableALibCourse){
+            System.out.print("Yes");
+        }
+
+        else{
+            System.out.print("No");
+        }
+
+        return("");
+    }
+
+    //Method to check if course is a Liberal Table B
+    public String checkLiberalB(){
+        System.out.print("Is course a Table B Liberal?: ");
+
+        if(TableBLibCourse){
+            System.out.print("Yes");
+        }
+
+        else{
+            System.out.print("No");
+        }
+
+        return("");
+    }
+
+    public String getInfo(){
+        System.out.println(CourseCode+" - "+CourseName);
+        System.out.println(CourseDescription);
+        System.out.println("Time course takes place: "+CourseTime);
+        return("");
+    }
+
 
 
 
