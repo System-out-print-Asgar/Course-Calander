@@ -120,6 +120,11 @@ public class CourseObject {
         return("");
     }
 
+    //method to get the time of a course
+    public String getTime(){
+        return(CourseTime);
+    }
+
     //method to return all the info of a specific course 
     public String getInfo(){
         System.out.println(CourseCode+" - "+CourseName);
