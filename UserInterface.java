@@ -10,9 +10,14 @@ public class UserInterface{
         InterfaceMethods iMethods = new InterfaceMethods();
 
         //create the scanner 
-        Scanner userScanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        
+        while(scanner.nextLine()){
+
+            
+        }
+
+
 
 
 
