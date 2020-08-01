@@ -16,9 +16,27 @@ public class InterfaceMethods{
     public void DisplayAllCourse(){
 
         for (String key : CourseList.keySet()){
+
             System.out.println(CourseList.get(key).getInfo());
         }
     }
+
+    //method that displays all the course of a given time frame 
+    public void DisplayInTimeFrame(String Time){
+
+        for(String key : CourseList.keySet()){
+
+            if(CourseList.get(key).getTime().equals(Time)){
+
+                System.out.println(CourseList.get(key).getInfo());
+            }
+            
+            else{
+                continue;
+            }
+        }
+    }
+    
 
 
 }
