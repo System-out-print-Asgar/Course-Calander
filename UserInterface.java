@@ -11,6 +11,7 @@ public class UserInterface{
 
         //create the scanner 
         Scanner scanner = new Scanner(System.in);
+        System.out.print(">");
 
         while(scanner.nextLine()){
 
