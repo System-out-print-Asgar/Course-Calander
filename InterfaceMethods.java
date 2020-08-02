@@ -1,6 +1,6 @@
 //this holds the methods in the user interface
 import java.io.File;
-import java.io.FileNotFoundException;;
+import java.io.FileNotFoundException;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.Scanner;
