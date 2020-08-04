@@ -33,6 +33,9 @@ public class UserInterface{
             //method to display all courses in database
             else if (UserCommand.equals("Display")){
                 System.out.println("We will display all courses now!");
+
+                //update display and create a method to add 
+
             }
 
 
