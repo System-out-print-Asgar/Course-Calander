@@ -49,6 +49,17 @@ public class InterfaceMethods{
             }
         }
     }
+
+    //this creates a course object and adds it to the databaseusing the users input
+    public void AddCourseToDatabase(String CC, String CN, String CD, String CT, Boolean CR, Boolean CG1, Boolean CTA, Boolean CTB, Boolean COEl, Boolean CPR){
+
+        String KEY = CC;
+        CourseObject ID = new CourseObject(CC, CN, CD, CT, CR, CG1, CTA, CTB, COE1, CPR);
+
+        CourseList.put(KEY, ID);
+        
+        System.out.println("Course added!");
+    }
     
     
 
