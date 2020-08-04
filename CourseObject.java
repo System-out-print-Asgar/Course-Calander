@@ -34,7 +34,7 @@ public class CourseObject {
     public String checkLiberalA(){
         System.out.print("Is course a Table A Liberal?: ");
 
-        if(TableALibCourse){
+        if(this.TableALibCourse){
             System.out.print("Yes");
         }
 
@@ -49,7 +49,7 @@ public class CourseObject {
     public String checkLiberalB(){
         System.out.print("Is course a Table B Liberal?: ");
 
-        if(TableBLibCourse){
+        if(this.TableBLibCourse){
             System.out.print("Yes");
         }
 
@@ -64,7 +64,7 @@ public class CourseObject {
     public String checkGroup1(){
         System.out.print("Is this course a Group 1 Course?: ");
 
-        if(Group1Course){
+        if(this.Group1Course){
             System.out.print("Yes");
         }
 
@@ -79,7 +79,7 @@ public class CourseObject {
     public String checkRequired(){
         System.out.print("Is this course a Required Credit Course?: ");
 
-        if(RequiredCourse){
+        if(this.RequiredCourse){
             System.out.print("Yes");
         }
 
@@ -94,7 +94,7 @@ public class CourseObject {
     public String checkOpenElective(){
         System.out.print("Is this course a Open Elective?: ");
 
-        if(OpenElecCourse){
+        if(this.OpenElecCourse){
             System.out.print("Yes");
         }
 
@@ -109,7 +109,7 @@ public class CourseObject {
     public String checkProfRelated(){
         System.out.print("Is this course a Professinally Related?: ");
 
-        if(ProfRelateCourse){
+        if(this.ProfRelateCourse){
             System.out.print("Yes");
         }
 
@@ -122,14 +122,14 @@ public class CourseObject {
 
     //method to get the time of a course
     public String getTime(){
-        return(CourseTime);
+        return(this.CourseTime);
     }
 
     //method to return all the info of a specific course 
     public String getInfo(){
-        System.out.println(CourseCode+" - "+CourseName);
-        System.out.println(CourseDescription);
-        System.out.println("Time course takes place: "+CourseTime);
+        System.out.println(this.CourseCode+" - "+this.CourseName);
+        System.out.println(this.CourseDescription);
+        System.out.println("Time course takes place: "+this.CourseTime);
         checkLiberalA();
         checkLiberalB();
         checkGroup1();
