@@ -33,15 +33,26 @@ public class UserInterface{
             //method to display all courses in database
             else if (UserCommand.equals("Display")){
                 System.out.println("Make a Course ID:");
+                //take user input
                 System.out.println("Name of Course:");
+                //take user input
                 System.out.println("Description of Course:");
+                //take unser input
                 System.out.println("Where will this run? (N/A if not being taken)");
+                //take user input
                 System.out.println("Is this a required credit?");
+                //take user input
                 System.out.println("Is this a group 1 credit?");
+                //take user input
                 System.out.println("Is this a table A liberal?");
+                //take user input
                 System.out.println("Is this a table B liberal?");
+                //take user input
                 System.out.println("Is this a open elective?");
+                //take user input
                 System.out.println("Is this a professinally realted?");
+                //take user inoput
+                
 
                 
 
