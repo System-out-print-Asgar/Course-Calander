@@ -32,26 +32,48 @@ public class UserInterface{
 
             //method to display all courses in database
             else if (UserCommand.equals("Display")){
+
+                String CID, CN, CDES, CT, CR, CG1, CTA, CTB, COE, CPR;
+
                 System.out.println("Make a Course ID:");
-                //take user input
+                //take user 
+                CID = Userinput.next();
+
                 System.out.println("Name of Course:");
                 //take user input
+                CN = Userinput.next();
+
                 System.out.println("Description of Course:");
                 //take unser input
+                CDES = Userinput.nextLine();
+
                 System.out.println("Where will this run? (N/A if not being taken)");
                 //take user input
+                CT = Userinput.next();
+
                 System.out.println("Is this a required credit?");
                 //take user input
+                CR = Userinput.next();
+
                 System.out.println("Is this a group 1 credit?");
                 //take user input
+                CG1 = Userinput.next(); 
+
                 System.out.println("Is this a table A liberal?");
                 //take user input
+                CTA = Userinput.next();
+
                 System.out.println("Is this a table B liberal?");
-                //take user input
+                //take user 
+                CTB = Userinput.next();
+
                 System.out.println("Is this a open elective?");
                 //take user input
+                COE = Userinput.next();
+
                 System.out.println("Is this a professinally realted?");
                 //take user inoput
+                CPR = Userinput.next();
                 
 
                 
