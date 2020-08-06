@@ -1,103 +1,104 @@
 //This is the user interface for selecting what actions to run
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-public class UserInterface{
+public class UserInterface {
 
     public static void main(String[] args) throws Exception {
 
-        //creates a instaance of the mthod file
+        // creates a instaance of the mthod file
         InterfaceMethods iMethods = new InterfaceMethods();
 
-        //print start up method
+        // print start up method
         iMethods.StartUpCommands();
 
-        //create the scanner 
+        // create the scanner
         Scanner scanner = new Scanner(System.in);
         System.out.print(">");
 
-        //scanner that checks if there is a extra line present and will procced with the code 
-        while(scanner.hasNextLine()){
+        // scanner that checks if there is a extra line present and will procced with
+        // the code
+        while (scanner.hasNextLine()) {
             String input = scanner.nextLine();
-            if(input == null || input.equals("")) continue;
+            if (input == null || input.equals(""))
+                continue;
 
-            //create a second scanner that will manage user input
+            // create a second scanner that will manage user input
             Scanner Userinput = new Scanner(input);
-            String UserCommand =  Userinput.next();
+            String UserCommand = Userinput.next();
 
-            
+            // code will contiue if there is no input
+            if (UserCommand == null || UserCommand.equals(""))
+                continue;
 
-            //code will contiue if there is no input
-            if (UserCommand == null || UserCommand.equals("")) continue;
+            // method to display all courses in database
+            else if (UserCommand.equals("Display")) {
 
-            //method to display all courses in database
-            else if (UserCommand.equals("Display")){
+                Scanner Dscan = new Scanner(System.in);
 
-                String CID, CN, CDES, CT, CR, CG1, CTA, CTB, COE, CPR;
+                try {
 
-                System.out.println("Make a Course ID:");
-                //take user 
-                CID = Userinput.next();
+                    String CID, CN, CDES, CT, CR, CG1, CTA, CTB, COE, CPR;
+                    Boolean boolCR, boolCG1, boolCTA, boolCTB, boolCOE, boolCPR;
 
-                System.out.println("Name of Course:");
-                //take user input
-                CN = Userinput.next();
+                    System.out.println("Make a Course ID:");
+                    // take user
+                    CID = Dscan.nextLine();
 
-                System.out.println("Description of Course:");
-                //take unser input
-                CDES = Userinput.nextLine();
+                    System.out.println("Name of Course:");
+                    // take user input
+                    CN = Dscan.nextLine();
 
-                System.out.println("Where will this run? (N/A if not being taken)");
-                //take user input
-                CT = Userinput.next();
+                    System.out.println("Description of Course:");
+                    // take unser input
+                    CDES = Dscan.nextLine();
 
-                System.out.println("Is this a required credit?");
-                //take user input
-                CR = Userinput.next();
+                    System.out.println("Where will this run? (N/A if not being taken)");
+                    // take user input
+                    CT = Dscan.next();
 
-                System.out.println("Is this a group 1 credit?");
-                //take user input
-                CG1 = Userinput.next(); 
+                    System.out.println("Is this a required credit?");
+                    // take user input
+                    CR = Dscan.next();
+                    boolCR = InterfaceMethods.ReturnBoolValue(CR);
 
-                System.out.println("Is this a table A liberal?");
-                //take user input
-                CTA = Userinput.next();
+                    System.out.println("Is this a group 1 credit?");
+                    // take user input
+                    CG1 = Dscan.next();
+                    boolCG1 = InterfaceMethods.ReturnBoolValue(CG1);
 
-                System.out.println("Is this a table B liberal?");
-                //take user 
-                CTB = Userinput.next();
+                    System.out.println("Is this a table A liberal?");
+                    // take user input
+                    CTA = Dscan.next();
+                    boolCTA = InterfaceMethods.ReturnBoolValue(CTA);
 
-                System.out.println("Is this a open elective?");
-                //take user input
-                COE = Userinput.next();
+                    System.out.println("Is this a table B liberal?");
+                    // take user
+                    CTB = Dscan.next();
+                    boolCTB = InterfaceMethods.ReturnBoolValue(CTB);
 
-                System.out.println("Is this a professinally realted?");
-                //take user inoput
-                CPR = Userinput.next();
-                
+                    System.out.println("Is this a open elective?");
+                    // take user input
+                    COE = Dscan.next();
+                    boolCOE = InterfaceMethods.ReturnBoolValue(COE);
 
-                
+                    System.out.println("Is this a professinally realted?");
+                    // take user inoput
+                    CPR = Dscan.next();
+                    boolCPR = InterfaceMethods.ReturnBoolValue(CPR);
 
-                //update display and create a method to add 
+                    InterfaceMethods.AddCourseToDatabase(CID, CN, CDES, CT, boolCR, boolCG1, boolCTA, boolCTB, boolCOE,boolCPR);
+                } catch (NoSuchElementException f) {
+                    System.out.print("Error catching");
+                }
 
+
+                ///NOTE WHEN THE PROGRAM FINSHS MAKE PROGRAM RUN METHODS PROMP TO KNOW WHAT TO DO AGIAN
             }
 
 
-
-            
         }
-
-
-
-
-
-
-
-
-
-
 
     }
 }
-
-
