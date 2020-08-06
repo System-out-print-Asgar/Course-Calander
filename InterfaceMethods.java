@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class InterfaceMethods{
     
     //map that holds all the course 
-    public TreeMap <String,CourseObject> CourseList = new TreeMap <String,CourseObject>();
+    public static TreeMap <String,CourseObject> CourseList = new TreeMap <String,CourseObject>();
 
     //method to display commands
     public void StartUpCommands(){
@@ -50,15 +50,29 @@ public class InterfaceMethods{
         }
     }
 
+    //method to return boolean value of string input
+    public static Boolean ReturnBoolValue(String Value){
+
+        if((Value.equalsIgnoreCase("YES"))||(Value.equalsIgnoreCase("Y"))){
+            return(true);
+        }
+        else{
+            return(false);
+        }
+
+    }
+    
+
     //this creates a course object and adds it to the databaseusing the users input
-    public void AddCourseToDatabase(String CC, String CN, String CD, String CT, Boolean CR, Boolean CG1, Boolean CTA, Boolean CTB, Boolean COEl, Boolean CPR){
+    public static void AddCourseToDatabase(String CC, String CN, String CD, String CT, Boolean CR, Boolean CG1, Boolean CTA, Boolean CTB, Boolean COE, Boolean CPR){
 
         String KEY = CC;
-        CourseObject ID = new CourseObject(CC, CN, CD, CT, CR, CG1, CTA, CTB, COE1, CPR);
+        CourseObject ID = new CourseObject(CC, CN, CD, CT, CR, CG1, CTA, CTB, COE, CPR);
 
         CourseList.put(KEY, ID);
-        
-        System.out.println("Course added!");
+
+        System.out.println("New course Has been added Course added");
+    
     }
     
     
