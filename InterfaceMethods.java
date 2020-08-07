@@ -72,6 +72,7 @@ public class InterfaceMethods{
         CourseList.put(KEY, ID);
 
         System.out.println("New course Has been added Course added");
+        System.out.println("");
     
     }
     
