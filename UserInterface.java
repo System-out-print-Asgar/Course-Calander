@@ -32,8 +32,15 @@ public class UserInterface {
             if (UserCommand == null || UserCommand.equals(""))
                 continue;
 
+            //method to display all courses in database
+            else if (UserCommand.equals("1")) {
+
+                iMethods.DisplayAllCourse();
+                iMethods.StartUpCommands();
+            }
+
             // method to display all courses in database
-            else if (UserCommand.equals("Display")) {
+            else if (UserCommand.equals("2")) {
 
                 Scanner Dscan = new Scanner(System.in);
 
@@ -92,9 +99,7 @@ public class UserInterface {
                 } catch (NoSuchElementException f) {
                     System.out.print("Error catching");
                 }
-
-
-                ///NOTE WHEN THE PROGRAM FINSHS MAKE PROGRAM RUN METHODS PROMP TO KNOW WHAT TO DO AGIAN
+                iMethods.StartUpCommands();
             }
 
 
