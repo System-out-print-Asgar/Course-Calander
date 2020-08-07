@@ -130,12 +130,13 @@ public class CourseObject {
         System.out.println(this.CourseCode+" - "+this.CourseName);
         System.out.println(this.CourseDescription);
         System.out.println("Time course takes place: "+this.CourseTime);
-        checkLiberalA();
-        checkLiberalB();
-        checkGroup1();
-        checkOpenElective();
-        checkRequired();
-        checkProfRelated();
+        System.out.println(checkLiberalA());
+        System.out.println(checkLiberalB());
+        System.out.println(checkGroup1());
+        System.out.println(checkOpenElective());
+        System.out.println(checkRequired());
+        System.out.println(checkProfRelated());
+        System.out.println("");
         return("");
     }
 
