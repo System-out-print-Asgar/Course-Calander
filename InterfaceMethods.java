@@ -21,6 +21,7 @@ public class InterfaceMethods{
         System.out.println("4-Look up all courses within a specfic time frame");
         System.out.println("5-Look up all courses within a specfic program");
         System.out.println("(Enter any other key to move to access the second menu)");
+        System.out.print("");
 
     }
 
