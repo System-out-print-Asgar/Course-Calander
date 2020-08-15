@@ -76,6 +76,20 @@ public class InterfaceMethods{
         System.out.println("");
     
     }
+
+    public static void LookUpSpecfic(String Ckey){
+
+        String ThisKEY =  Ckey;
+
+        for(String keys : CourseList.keySet()){
+
+            if(CourseList.get(keys).equalsIgnoreCase(ThisKEY))
+        }
+
+
+
+
+    }
     
     
 
