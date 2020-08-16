@@ -64,7 +64,7 @@ public class InterfaceMethods{
     }
     
 
-    //this creates a course object and adds it to the databaseusing the users input
+    //method to add course to database 
     public static void AddCourseToDatabase(String CC, String CN, String CD, String CT, Boolean CR, Boolean CG1, Boolean CTA, Boolean CTB, Boolean COE, Boolean CPR){
 
         String KEY = CC;
@@ -77,6 +77,7 @@ public class InterfaceMethods{
     
     }
 
+    //method to look up a specfic course
     public static void LookUpSpecfic(String Ckey){
 
         String ThisKEY =  Ckey;
@@ -90,7 +91,15 @@ public class InterfaceMethods{
 
 
     }
+
+    // method to find course by course ID
+
+
+    //method to find course by time frame
     
+    //method to saerch by specfic program 
+
+    //method to search up required 
     
 
 
