@@ -125,6 +125,11 @@ public class CourseObject {
         return(this.CourseTime);
     }
 
+    //method ot get the ID of a course
+    public String getId(){
+        return(this.CourseCode);
+    }
+
     //method to return all the info of a specific course 
     public String getInfo(){
         System.out.println(this.CourseCode+" - "+this.CourseName);
