@@ -20,6 +20,7 @@ public class InterfaceMethods{
         System.out.println("3-Look up a specfic course in data base using ID");
         System.out.println("4-Look up all courses within a specfic time frame");
         System.out.println("5-Look up all courses within a specfic program");
+        System.out.println("6-End program");
         System.out.println("(Enter any other key to move to access the second menu)");
         System.out.print("");
 
@@ -78,17 +79,17 @@ public class InterfaceMethods{
     }
 
     //method to look up a specfic course
-    public static void LookUpSpecfic(String Ckey){
+    public static void LookUpSpecfic(String ThisCKey){
 
-        String ThisKEY =  Ckey;
+        String ThisKey = ThisCKey;
 
         for(String keys : CourseList.keySet()){
 
-            if(CourseList.get(keys).equalsIgnoreCase(ThisKEY))
+            if(CourseList.get(keys).getId().equalsIgnoreCase(ThisKey)){
+
+                System.out.println(CourseList.get(keys).getInfo());
+            }
         }
-
-
-
 
     }
 
