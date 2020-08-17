@@ -32,7 +32,7 @@ public class UserInterface {
             if (UserCommand == null || UserCommand.equals(""))
                 continue;
 
-            //method to display all courses in database
+            // method to display all courses in database
             else if (UserCommand.equals("1")) {
 
                 iMethods.DisplayAllCourse();
@@ -95,13 +95,28 @@ public class UserInterface {
                     CPR = Dscan.next();
                     boolCPR = InterfaceMethods.ReturnBoolValue(CPR);
 
-                    InterfaceMethods.AddCourseToDatabase(CID, CN, CDES, CT, boolCR, boolCG1, boolCTA, boolCTB, boolCOE,boolCPR);
+                    InterfaceMethods.AddCourseToDatabase(CID, CN, CDES, CT, boolCR, boolCG1, boolCTA, boolCTB, boolCOE,
+                            boolCPR);
                 } catch (NoSuchElementException f) {
                     System.out.print("Error catching");
                 }
                 iMethods.StartUpCommands();
             }
 
+            else if (UserCommand.equals("3")) {
+
+                Scanner Uscan = new Scanner(System.in);
+
+                System.out.println("Enter course code that will be searched:");
+                String Ccheck = Uscan.next();
+                System.out.println(" ");
+
+                InterfaceMethods.LookUpSpecfic(Ccheck);
+            }
+
+            else if (UserCommand.equals("6")){
+                System.exit(0);
+            }
 
         }
 
