@@ -130,6 +130,11 @@ public class CourseObject {
         return(this.CourseCode);
     }
 
+    //method to get get program acronym
+    public String getProgram(){
+        return(this.CourseCode.substring(0, 3));
+    }
+
     //method to return all the info of a specific course 
     public String getInfo(){
         System.out.println(this.CourseCode+" - "+this.CourseName);
