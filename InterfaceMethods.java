@@ -63,7 +63,6 @@ public class InterfaceMethods{
         }
 
     }
-    
 
     //method to add course to database 
     public static void AddCourseToDatabase(String CC, String CN, String CD, String CT, Boolean CR, Boolean CG1, Boolean CTA, Boolean CTB, Boolean COE, Boolean CPR){
@@ -92,15 +91,38 @@ public class InterfaceMethods{
         }
 
     }
-
-    // method to find course by course ID
-
-
-    //method to find course by time frame
     
     //method to saerch by specfic program 
+    public static void LookUpProgram(String Program){
 
-    //method to search up required 
+        String ProgramSTR = Program;
+
+        for(String keys : CourseList.keySet()){
+            
+            if(CourseList.get(keys).getProgram().equalsIgnoreCase(ProgramSTR)){
+
+                System.out.println(CourseList.get(keys).getInfo());
+            }
+        }
+    }
+
+
+    //method to find time frame
+    public static void LookUpTime(String TimeF){
+
+        String ProgramTime = TimeF; 
+
+        for(String keys : CourseList.keySet()){
+
+            if(CourseList.get(keys).getTime().equalsIgnoreCase(TimeF)){
+
+                System.out.println(CourseList.get(Keys).getInfo());
+
+            }
+        }
+    }
+
+    //method to search up by program
     
 
 
