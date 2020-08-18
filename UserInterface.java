@@ -103,6 +103,7 @@ public class UserInterface {
                 iMethods.StartUpCommands();
             }
 
+            //method to find the a course in database with scepific ID
             else if (UserCommand.equals("3")) {
 
                 Scanner Uscan = new Scanner(System.in);
@@ -114,6 +115,21 @@ public class UserInterface {
                 InterfaceMethods.LookUpSpecfic(Ccheck);
             }
 
+            //method to find course within specfic timeframe
+            else if (UserCommand.equals("4")) {
+
+                
+
+
+
+            }
+
+
+            //method to find all courses within specfic program
+
+
+
+            //method to end the program
             else if (UserCommand.equals("6")){
                 System.exit(0);
             }
