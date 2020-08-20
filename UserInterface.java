@@ -113,14 +113,22 @@ public class UserInterface {
                 System.out.println(" ");
 
                 InterfaceMethods.LookUpSpecfic(Ccheck);
+
+                iMethods.StartUpCommands();
             }
 
             //method to find course within specfic timeframe
             else if (UserCommand.equals("4")) {
 
-                
+                Scanner Tscan = new Scanner(System.in);
 
+                System.out.println("Enter the time frame for the courses you plan to search up");
+                String Tcheck = Tscan.next();
+                System.out.println(" ");
 
+                InterfaceMethods.LookUpTime(Tcheck);
+
+                iMethods.StartUpCommands();
 
             }
 
