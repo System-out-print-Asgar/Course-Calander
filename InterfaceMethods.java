@@ -13,6 +13,7 @@ public class InterfaceMethods{
 
     //method to display commands
     public void StartUpCommands(){
+        System.out.println("");
         System.out.println("Welcome to course calander V1.0");
         System.out.println("To start the program please begin with entering the number of a command below:");
         System.out.println("1-Display all current courses in the database");
