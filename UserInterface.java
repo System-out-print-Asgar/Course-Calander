@@ -133,7 +133,17 @@ public class UserInterface {
             }
 
 
-            //method to find all courses within specfic program
+            //method to find all courses within specfic 
+            else if (UserCommand.equals("5")) {
+
+                Scanner Fscan = new Scanner(System.in);
+
+                System.out.println("Enter the Faculty to you want for: ");
+                String Fcheck = Fscan.next();
+                System.out.println(" ");
+
+                //create method look within a specfic program
+            }
 
 
 
