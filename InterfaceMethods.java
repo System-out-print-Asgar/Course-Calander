@@ -124,7 +124,11 @@ public class InterfaceMethods{
     }
 
     //method to search up by program
-    
+    //get string 
+    //find first 3
+    //make object method to find frist 3 key
+    //compare
+    //print courses
 
 
 }
