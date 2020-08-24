@@ -123,6 +123,9 @@ public class InterfaceMethods{
         }
     }
 
+
+    public static void LookUpPorgram(String )
+
     //method to search up by program
     //get string 
     //find first 3
