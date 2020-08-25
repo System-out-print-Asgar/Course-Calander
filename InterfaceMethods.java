@@ -103,6 +103,7 @@ public class InterfaceMethods{
             if(CourseList.get(keys).getProgram().equalsIgnoreCase(ProgramSTR)){
 
                 System.out.println(CourseList.get(keys).getInfo());
+                //modify code to compare first 3 char of strings
             }
         }
     }
