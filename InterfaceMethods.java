@@ -108,6 +108,37 @@ public class InterfaceMethods{
     }
 
 
+    //method to shorten the program code
+    public static String ReduceINPUT(String ToShorten){
+
+        String ThisSTR = ToShorten;
+        
+        int count=0;
+
+        for(int i = 0; i < ThisSTR.length(); i++){
+
+            if(ThisSTR.charAt(i)!= ' '){
+
+                count++;
+            }
+        }
+
+        String ThisSTR2 = ThisSTR.substring(0, count-1);
+
+        if(count>3){
+
+            ReduceINPUT(ThisSTR2);
+            
+        }
+
+        else{
+
+            count = 0;
+        }
+        return(ThisSTR);
+    }
+
+
     //method to find time frame
     public static void LookUpTime(String TimeF){
 
@@ -115,23 +146,16 @@ public class InterfaceMethods{
 
         for(String keys : CourseList.keySet()){
 
-            if(CourseList.get(keys).getTime().equalsIgnoreCase(TimeF)){
+            if(CourseList.get(keys).getTime().equalsIgnoreCase(ProgramTime)){
 
-                System.out.println(CourseList.get(Keys).getInfo());
+                System.out.println(CourseList.get(keys).getInfo());
 
             }
         }
     }
 
 
-    public static void LookUpPorgram(String )
 
-    //method to search up by program
-    //get string 
-    //find first 3
-    //make object method to find frist 3 key
-    //compare
-    //print courses
 
 
 }
