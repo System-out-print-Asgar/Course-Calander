@@ -93,7 +93,7 @@ public class InterfaceMethods{
 
     }
     
-    //method to saerch by specfic program 
+    //method to saerch by specfic program  
     public static void LookUpProgram(String Program){
 
         String ProgramSTR = Program;
