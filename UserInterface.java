@@ -115,6 +115,7 @@ public class UserInterface {
                 InterfaceMethods.LookUpSpecfic(Ccheck);
 
                 iMethods.StartUpCommands();
+                
             }
 
             //method to find course within specfic timeframe
