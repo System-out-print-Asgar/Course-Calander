@@ -133,7 +133,7 @@ public class UserInterface {
             }
 
 
-            //method to find all courses within specfic  
+            //method to find all courses within specfic
             else if (UserCommand.equals("5")) {
 
                 Scanner Fscan = new Scanner(System.in);
