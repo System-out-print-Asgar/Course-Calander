@@ -50,22 +50,6 @@ public class InterfaceMethods{
         }
     }
 
-    //method that displays all the course of a given time frame 
-    public void DisplayInTimeFrame(String Time){
-
-        for(String key : CourseList.keySet()){
-
-            if(CourseList.get(key).getTime().equals(Time)){
-
-                System.out.println(CourseList.get(key).getInfo());
-            }
-            
-            else{
-                continue;
-            }
-        }
-    }
-
     //method to return boolean value of string input
     public static Boolean ReturnBoolValue(String Value){
 
