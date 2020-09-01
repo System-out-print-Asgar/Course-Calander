@@ -11,7 +11,7 @@ public class UserInterface {
         InterfaceMethods iMethods = new InterfaceMethods();
 
         // print start up method
-        iMethods.StartUpCommands();
+        iMethods.CommandsPageOne();
 
         // create the scanner
         Scanner scanner = new Scanner(System.in);
@@ -36,7 +36,7 @@ public class UserInterface {
             else if (UserCommand.equals("1")) {
 
                 iMethods.DisplayAllCourse();
-                iMethods.StartUpCommands();
+                iMethods.CommandsPageOne();
             }
 
             // method to display all courses in database
@@ -50,86 +50,49 @@ public class UserInterface {
                     Boolean boolCR, boolCG1, boolCTA, boolCTB, boolCOE, boolCPR;
 
                     System.out.println("Make a Course ID:");
-                    // take user
                     CID = Dscan.nextLine();
 
                     System.out.println("Name of Course:");
-                    // take user input
                     CN = Dscan.nextLine();
 
                     System.out.println("Description of Course:");
-                    // take unser input
                     CDES = Dscan.nextLine();
 
                     System.out.println("Where will this run? (N/A if not being taken)");
-                    // take user input
                     CT = Dscan.next();
 
                     System.out.println("Is this a required credit?");
-                    // take user input
                     CR = Dscan.next();
-                    boolCR = InterfaceMethods.ReturnBoolValue(CR);
 
                     System.out.println("Is this a group 1 credit?");
-                    // take user input
                     CG1 = Dscan.next();
-                    boolCG1 = InterfaceMethods.ReturnBoolValue(CG1);
 
                     System.out.println("Is this a table A liberal?");
-                    // take user input
                     CTA = Dscan.next();
-                    boolCTA = InterfaceMethods.ReturnBoolValue(CTA);
 
                     System.out.println("Is this a table B liberal?");
-                    // take user
                     CTB = Dscan.next();
-                    boolCTB = InterfaceMethods.ReturnBoolValue(CTB);
 
                     System.out.println("Is this a open elective?");
-                    // take user input
                     COE = Dscan.next();
-                    boolCOE = InterfaceMethods.ReturnBoolValue(COE);
 
                     System.out.println("Is this a professinally realted?");
-                    // take user inoput
                     CPR = Dscan.next();
-                    boolCPR = InterfaceMethods.ReturnBoolValue(CPR);
 
-                    InterfaceMethods.AddCourseToDatabase(CID, CN, CDES, CT, boolCR, boolCG1, boolCTA, boolCTB, boolCOE,
-                            boolCPR);
-                } catch (NoSuchElementException f) {
-                    System.out.print("Error catching");
-                }
-                iMethods.StartUpCommands();
+                //    InterfaceMethods.AddCourseToDatabase( Variables );
+                //} catch (NoSuchElementException f) {
+                //    System.out.print("Error catching");
+                //}
+                //iMethods.CommandsPageOne();
             }
 
             //method to find the a course in database with scepific ID
             else if (UserCommand.equals("3")) {
 
-                Scanner Uscan = new Scanner(System.in);
-
-                System.out.println("Enter course code that will be searched:");
-                String Ccheck = Uscan.next();
-                System.out.println(" ");
-
-                InterfaceMethods.LookUpSpecfic(Ccheck);
-
-                iMethods.StartUpCommands();
-                
             }
 
             //method to find course within specfic timeframe
             else if (UserCommand.equals("4")) {
-
-                Scanner Tscan = new Scanner(System.in);
-
-                System.out.println("Enter the time frame for the courses you plan to search up");
-                String Tcheck = Tscan.next();
-                System.out.println(" ");
-
-                InterfaceMethods.LookUpTime(Tcheck);
-
-                iMethods.StartUpCommands();
 
             }
 
@@ -137,22 +100,54 @@ public class UserInterface {
             //method to find all courses within specfic
             else if (UserCommand.equals("5")) {
 
-                Scanner Fscan = new Scanner(System.in);
-
-                System.out.println("Enter the Faculty to you want for: ");
-                String Fcheck = Fscan.next();
-                System.out.println(" ");
-
-                //create method look within a specfic program
-                //check Interface
             }
 
 
 
             //method to end the program
             else if (UserCommand.equals("6")){
-                System.exit(0);
+                
             }
+
+            
+
+            //method to show second list
+            else if (UserCommand.equals("7")){
+
+            }
+
+
+            //method to show second list
+            else if (UserCommand.equals("8")){
+
+            }
+
+
+            //method to show second list
+            else if (UserCommand.equals("9")){
+
+            }
+
+
+            //method to show second list
+            else if (UserCommand.equals("10")){
+
+            }
+
+            //method to show second list
+            else if (UserCommand.equals("11")){
+
+            }
+
+            //method to show second list
+            else if (UserCommand.equals("12")){
+
+            }
+
+
+
+
+        
 
         }
 
