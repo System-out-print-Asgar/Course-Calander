@@ -12,18 +12,31 @@ public class InterfaceMethods{
     public static TreeMap <String,CourseObject> CourseList = new TreeMap <String,CourseObject>();
 
     //method to display commands
-    public void StartUpCommands(){
+    public void CommandsPageOne(){
         System.out.println("");
         System.out.println("Welcome to course calander V1.0");
         System.out.println("To start the program please begin with entering the number of a command below:");
-        System.out.println("1-Display all current courses in the database");
-        System.out.println("2-Add a new course to the database");
-        System.out.println("3-Look up a specfic course in data base using ID");
-        System.out.println("4-Look up all courses within a specfic time frame");
-        System.out.println("5-Look up all courses within a specfic program");
-        System.out.println("6-End program");
-        System.out.println("(Enter any other key to move to access the second menu)");
+        System.out.println("1-Add a new course to the database");
+        System.out.println("2-Remove a course from data base");
+        System.out.println("3-Display all current courses in the database");
+        System.our.println("4-Display Required courses in Database");
+        System.our.println("5-Display Group 1 courses in Database");
+        System.out.println("6-Show addiontal Options");
         System.out.print("");
+    }
+
+    public void CommandsPageTwo(){
+        System.our.println("");
+        System.out.println("7-Return to Previous Options");
+        System.our.println("8-Display Open Elective Courses");
+        System.our.println("9-Display Professinally Related Courses");
+        System.our.println("10-Display Table A Liberal Courses");
+        System.our.println("11-Display Table B Liberal Courses");
+        System.out.println("12-Exit program")
+        System.our.println("");
+
+
+
 
     }
 
@@ -103,42 +116,9 @@ public class InterfaceMethods{
             if(CourseList.get(keys).getProgram().equalsIgnoreCase(ProgramSTR)){
 
                 System.out.println(CourseList.get(keys).getInfo());
-                //modify code to compare first 3 char of strings
             }
         }
     }
-
-
-    //method to shorten the program code
-    public static String ReduceINPUT(String ToShorten){
-
-        String ThisSTR = ToShorten;
-        
-        int count=0;
-
-        for(int i = 0; i < ThisSTR.length(); i++){
-
-            if(ThisSTR.charAt(i)!= ' '){
-
-                count++;
-            }
-        }
-
-        String ThisSTR2 = ThisSTR.substring(0, count-1);
-
-        if(count>3){
-
-            ReduceINPUT(ThisSTR2);
-            
-        }
-
-        else{
-
-            count = 0;
-        }
-        return(ThisSTR);
-    }
-
 
     //method to find time frame
     public static void LookUpTime(String TimeF){
