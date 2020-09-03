@@ -50,18 +50,6 @@ public class InterfaceMethods{
         }
     }
 
-    //method to return boolean value of string input
-    public static Boolean ReturnBoolValue(String Value){
-
-        if((Value.equalsIgnoreCase("YES"))||(Value.equalsIgnoreCase("Y"))){
-            return(true);
-        }
-        else{
-            return(false);
-        }
-
-    }
-
     //method to add course to database 
     public static void AddCourseToDatabase(String CC, String CN, String CD, String CT, Boolean CR, Boolean CG1, Boolean CTA, Boolean CTB, Boolean COE, Boolean CPR){
 
