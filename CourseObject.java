@@ -49,50 +49,115 @@ public class CourseObject {
         return(this.CourseName);
     }
 
+    //CD getter
+    public String GetCourseDescription(){
+        return(this.CourseDescription);
+    }
+
     //CT getter
     public String GetCourseTime(){
         return(this.CourseTime);
     }
 
-    //Check Getter
+    //Check setter
     public Boolean SetCouseBoolean(String Input){
-
-        TestInput = SetCourseUpper(Input);
-
-        
-
-
-
+        String TestInput = SetCourseUpper(Input);
+        if(TestInput.equalsIgnoreCase("yes") || TestInput.equalsIgnoreCase("y")){
+            return(true);
+        }
+        else{
+            return(false);
+        }
     }
 
-    //RC getter 
+
+    //RC getter and setter
     public Boolean GetRequiredCourse(){
         return(this.RequiredCourse);
     }
+    public String PrintRC(){
+        System.out.println("Is this course a Required?: ");
+        if(this.RequiredCourse){
+            return("Yes");
+        }
+        else{
+            return("No");
+        }
+    }
 
-    //GC getter
+
+    //GC getter and setter
     public Boolean GetGroup1Course(){
         return(this.Group1Course);
     }
+    public String PrintGC(){
+        System.out.println("Is this course a Group 1 Credit?: ");
+        if(this.Group1Course){
+            return("Yes");
+        }
+        else{
+            return("No");
+        }
+    }
 
-    //OC getter
+
+    //OC getter and setter
     public Boolean GetOpenElectiveCourse(){
         return(this.OpenElecCourse);
     }
+    public String PrintOC(){
+        System.out.println("Is this course a Open Elective?: ");
+        if(this.OpenElecCourse){
+            return("Yes");
+        }
+        else{
+            return("No");
+        }
+    }
 
-    //PC getter
+
+    //PC getter and setter
     public Boolean GetProfessionallyRelatedCourse(){
         return(this.ProfRelateCourse);
     }
+    public String PrintPC(){
+        System.out.println("Is this course a Professinally Related?: ");
+        if(this.ProfRelateCourse){
+            return("Yes");
+        }
+        else{
+            return("No");
+        }
+    }
 
-    //TAC getter
+
+    //TAC getter and setter
     public Boolean GetTableACourse(){
         return(this.TableALibCourse);
     }
+    public String PrintTAC(){
+        System.out.println("Is this course a Table A Liberal?: ");
+        if(this.TableALibCourse){
+            return("Yes");
+        }
+        else{
+            return("No");
+        }
+    }
 
-    //TBC getter
+
+    //TBC getter and setter
     public Boolean GetTableBCourse(){
         return(this.TableBLibCourse);
+    }
+    public String PrintTBC(){
+        System.out.println("Is this course a Table B Liberal?: ");
+        if(this.TableBLibCourse){
+            return("Yes");
+        }
+        else{
+            return("No");
+        }
     }
 
 
