@@ -76,7 +76,7 @@ public class CourseObject {
         return(this.RequiredCourse);
     }
     public String PrintRC(){
-        System.out.println("Is this course a Required?: ");
+        System.out.println("Is this course a Required?: ");  
         if(this.RequiredCourse){
             return("Yes");
         }
