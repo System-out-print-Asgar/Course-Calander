@@ -24,7 +24,7 @@ public class CourseObject {
        CourseDescription = CD;
        CourseTime = CT;
        RequiredCourse = RC;
-       Group1Course = GC;
+       Group1Course = GC; 
        TableALibCourse = TAC;
        TableBLibCourse = TBC;
        OpenElecCourse = OC;
